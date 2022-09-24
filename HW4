@@ -1,0 +1,31 @@
+public class HW4
+{ 
+	public static void main (String args [])
+	{
+		String string = "in the beginning God created the heaven and the earth";
+		String word1 = "the";
+		String word2 = "beginning";
+		String word3 = "recreate";
+	    String split_sentence [] = string.split(" ");
+	    int c1 = 0;
+	    int c2 = 0;
+	    int c3 = 0;
+	    
+	    for(int index=0;index < split_sentence.length(); index ++)
+	    {
+	    	if (word1.equals(split_sentence[index]))
+	    		c1++;
+	    	if (word2.equals(split_sentence[index]))
+	    		c2++;
+	    	if (word3.equals(split_sentence[index]))
+	    	    c3++;
+	    }
+	    System.out.println ("the string is:"+ string);
+	    System.out.println ("the word" + word1 + " occurs " + c1 + "times");
+	    System.out.println ("the word" + word2 + " occurs " + c2 + "times");
+	    System.out.println ("the word" + word3 + " occurs " + c3 + "times");
+	  
+	    
+		
+	}
+}
